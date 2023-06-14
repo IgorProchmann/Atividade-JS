@@ -1,0 +1,16 @@
+// Questão 4
+function inverso(valor) {
+    if (typeof valor === 'boolean') {
+      return !valor;
+    } else if (typeof valor === 'number') {
+      return -valor;
+    } else {
+      return "Booleano ou Número esperados, mas o parâmetro é do tipo " + typeof valor;
+    }
+  }
+
+console.log(inverso(true))
+console.log(inverso(false))
+console.log(inverso(5))
+console.log(inverso(-10))
+console.log(inverso("abc"))
